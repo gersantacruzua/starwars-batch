@@ -7,10 +7,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Slf4j
-public class SwapiListener {
+public class PeopleStepListener {
 
-  @AfterStep
-  public void afterStep(StepExecution stepExecution) {
-    log.info(stepExecution.getSummary());
-  }
+    @AfterStep
+    public void afterStep(StepExecution stepExecution){
+        log.info(stepExecution.getSummary());
+    }
+
 }
